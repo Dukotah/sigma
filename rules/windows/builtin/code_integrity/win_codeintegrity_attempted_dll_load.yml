@@ -11,7 +11,7 @@ references:
     - https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/operations/event-id-explanations
 author: Florian Roth (Nextron Systems), Nasreddine Bencherchali (Nextron Systems)
 date: 2022-01-20
-modified: 2025-02-28
+modified: 2026-11-20
 tags:
     - attack.execution
 logsource:
@@ -94,7 +94,7 @@ detection:
         FileNameBuffer|endswith: '\Trend Micro\Client Server Security Agent\perficrcperfmonmgr.dll'
         RequestedPolicy: 8
     filter_optional_mdns_responder:
-        FileNameBuffer|endswith: '\Program Files\National Instruments\Shared\mDNS Responder\nimdnsNSP.dll '
+        FileNameBuffer|endswith: '\Program Files\National Instruments\Shared\mDNS Responder\nimdnsNSP.dll'
     filter_optional_mcafee:
         FileNameBuffer|endswith:
             - '\Program Files\McAfee\Endpoint Security\Threat Prevention\MfeAmsiProvider.dll'
